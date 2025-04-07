@@ -1,7 +1,7 @@
 
 import streamlit as st
 
-# Conversion logic for Length, Weight, and Temperature
+# Conversion logic for length, weight, and temperature
 conversion_factors = {
     "Length": {
         "meters": {"kilometers": 0.001},
@@ -23,7 +23,7 @@ conversion_factors = {
 
 # page setup
 st.set_page_config(page_title="Unit Converter", layout="centered")
-st.title("Simple Unit Converter")
+st.title("<--Unit Converter for easy and quick conversions-->")
 
 unit_type = st.selectbox("Choose type", list(conversion_factors.keys()))
 from_unit = st.selectbox("From", list(conversion_factors[unit_type].keys()))
